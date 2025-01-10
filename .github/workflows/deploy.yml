@@ -32,7 +32,7 @@ jobs:
         run: "npm install"
 
       - name: Build step
-        run: "export PRIVATE_KEY = \"./certs/key.pem\"; export CERT_CHAIN = \"./certs/cert.pem\";npm start"
+        run: "npm start"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
